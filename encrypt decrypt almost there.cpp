@@ -7,7 +7,7 @@ int main(){
         std::cout<<"Enter the four digit number: ";
         std::cin>>array[0];
     }
-    while(n<1000 || n>9999);
+    while(array[0]<1000 || array[0]>9999);
    std::cout<<"Do you want to encrypt or decrypt the number? "<<std::endl;
    std::cout<<"Type Y/y for encryption or N/n for decryption: ";
    std::cin>>x;
