@@ -13,17 +13,17 @@ int main(){
    std::cin>>letter;
     if(x == 'Y' || x == 'y') // if user wants to encrypt.
     {
-        // we extract the individual digits from the number we accepted in the next 4 lines of code.
+        // we extract the individual digits from the number we accepted.
        array[1]=array[0] / 1000;
        array[2]=(array[0] / 100)%10;
        array[3]=(array[0] / 10)%10;
        array[4]=array[0] % 10;
-        // we encrypt the number with the algorithm we are given in the next 4 lines of code.
+        // Encryption algorithm.
        array[5]=(array[1] + 7)%10;
        array[6]=(array[2] + 7)%10;
        array[7]=(array[3] + 7)%10;
        array[8]=(array[4] + 7)%10;
-       // we shuffle the numbers according to the algorithm.
+       // we shuffle the numbers.
        array[11] = array[5];
        array[12] = array[6];
        array[9] = array[7];
@@ -56,7 +56,7 @@ int main(){
     std::cin>>letter;
     if (x== 'Y' || x == 'y ') // if user wants to continue
     goto backtofirst; // repeat the process of accepting a number from the user.
-    else // if user doesn't want to continue
+    else // if user doesn't want to continue.
     std::cout<<"Thank you for using this program!"<<std::endl;
     return 0;
 }
